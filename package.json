@@ -1,0 +1,32 @@
+{
+	"name": "gambitcore",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server-stop": "stop core",
+		"clean": "rimraf ./resources",
+		"build": "npm run clean && swc source -d resources --copy-files --strip-leading-paths --quiet",
+		"dev": "nodemon"
+	},
+	"author": "Gambit Team",
+	"type": "module",
+	"license": "ISC",
+	"devDependencies": {
+		"@altv/types-client": "^16.2.7",
+		"@altv/types-natives": "^16.2.1",
+		"@altv/types-server": "^16.2.5",
+		"@altv/types-shared": "^16.2.4",
+		"@altv/types-webview": "^16.2.1",
+		"@swc/cli": "^0.5.0",
+		"@swc/core": "^1.7.42",
+		"altv-pkg-gambit": "^1.2.2",
+		"nodemon": "^3.1.7",
+		"rimraf": "^6.0.1",
+		"typeorm": "^0.3.20",
+		"typescript": "^5.6.3"
+	},
+	"dependencies": {
+		"pg": "^8.13.1"
+	}
+}
