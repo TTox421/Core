@@ -8,7 +8,7 @@
 ## Установка проекта
 
 ### Скачиваем проект с git
-``git clone ссылка``
+``git clone https://github.com/TTox421/Core.git``
 
 ### Устанавливаем node зависимости.
 ``npm i``
